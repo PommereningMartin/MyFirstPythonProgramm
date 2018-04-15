@@ -10,7 +10,6 @@ class DatabaseConnection:
         __userpassword = password
         __dbName = dbname
 
-    @staticmethod
-    def connect():
-        return object
+    def connect(self):
         print("try to connect to given url")
+        return None

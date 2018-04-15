@@ -1,14 +1,16 @@
 """
 autor: Martin Pommerening
 """
-from app.services.database.databaseConnection import DatabaseConnection
 
+#%%
+import matplotlib.pyplot as plt
+import databaseConnection
 
 class DatabaseCreator:
     database = None
 
     def __init__(self, adress, username, userpassword, databaseName):
-        con = DatabaseConnection(adress, username, userpassword, databaseName).connect()
+        con = databaseConnection.DatabaseConnection(adress, username, userpassword, databaseName).connect()
         print(adress, username, userpassword, databaseName)
 
 

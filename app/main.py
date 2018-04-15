@@ -1,5 +1,7 @@
-from app.services.database.databaseCreator import DatabaseCreator
-
+"""
+autor: Martin Pommerening
+"""
+from services.database.databaseCreator import DatabaseCreator
 
 def main():
     creator = DatabaseCreator("localhost:9090", "test", "testPw", "testDb")
